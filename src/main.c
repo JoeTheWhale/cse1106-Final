@@ -76,7 +76,7 @@ void mainMenu(int *repeat){
         printf("how much would you like the new max capacity to be?\n");
         scanf("%d", &maxCount);
         printf("\nNew max count is %d.\n", maxCount);
-        ledCheck();
+        ledCheck(Occupancy);
         printf("New Occupancy: %d/%d\n\n", Occupancy, maxCount);
     }
     else if(decision == 4){
