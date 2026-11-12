@@ -20,7 +20,7 @@ void increaseCount(int *p, int change);
 void decreaseCount(int *p, int change);
  
 void logChange(int Occupancy){
-    FILE *file = fopen("change_log.csv", "w");  
+    FILE *file = fopen("change_log.txt", "w");  
     if (file == NULL) {  
         perror("Error opening file");  
         return;
