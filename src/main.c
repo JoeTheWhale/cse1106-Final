@@ -42,7 +42,7 @@ void ledCheck(int Occupancy){
 }
  
 void mainMenu(int *repeat){
-    printf("\n======== STUDY ROOM COUNTER ========\n");
+    printf("\n\n======== STUDY ROOM COUNTER ========\n");
     printf("What would you like to do?\n");
     printf("1: Increase count\n");
     printf("2: Decrease count\n");
@@ -87,7 +87,8 @@ void mainMenu(int *repeat){
 void increaseCount(int *p, int change){
   
   if((*p + change) >= maxCount) {
-      printf("Max capacity reached, please enter a smaller number.");
+      printf("Max capacity reached.\n");
+      *p = maxCount;
       return;
   }
     else{
@@ -97,7 +98,8 @@ void increaseCount(int *p, int change){
  
 void decreaseCount(int *p, int change){
   if((*p - change) < 0) {
-      printf("Max capacity reached, please enter a smaller number.");
+      printf("Minimum capacity reached.");
+      *p = 0;
       return;
   }
     else{
