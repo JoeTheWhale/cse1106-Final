@@ -100,7 +100,7 @@ void increaseCount(int *p, int change){
  
 void decreaseCount(int *p, int change){
   if((*p - change) < 0) {
-      printf("Minimum capacity reached.");
+      printf("Minimum capacity reached.\n");
       *p = 0;
       return;
   }
