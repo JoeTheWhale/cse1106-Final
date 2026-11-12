@@ -86,7 +86,7 @@ void mainMenu(int *repeat){
  
 void increaseCount(int *p, int change){
   
-  if((*p + change) >= 6) {
+  if((*p + change) >= maxCount) {
       printf("Max capacity reached, please enter a smaller number.");
       return;
   }
