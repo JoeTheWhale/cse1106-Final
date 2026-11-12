@@ -6,7 +6,6 @@
 #define PIN 6
 
  
- 
 int maxCount = 5;
  
 int currentCount = 0;
@@ -19,14 +18,14 @@ int *repeatPtr = &repeat;
 void increaseCount(int *p, int change);
 void decreaseCount(int *p, int change);
  
-void logChange(int Occupancy){
+void logChange(int Occupancy, int maxCount){
     FILE *file = fopen("change_log.txt", "w");  
     if (file == NULL) {  
-        perror("Error opening file");  
+        printf("\n\nError opening file\n\n");  
         return;
     }
  
-    fprintf(file, "New occupancy: %d/5 \n", Occupancy);
+    fprintf(file, "New occupancy: %d/%d \n", Occupancy, maxCount);
  
     fclose(file);
 }
@@ -59,7 +58,7 @@ void mainMenu(int *repeat){
       scanf("%d", &decisionCount);
       increaseCount (&Occupancy, decisionCount);
         printf("New Occupancy: %d/%d", Occupancy, maxCount);
-         logChange(Occupancy);
+         logChange(Occupancy, maxCount);
         ledCheck(Occupancy);
      // return; //left blank intentionally
     }
@@ -68,7 +67,7 @@ void mainMenu(int *repeat){
       scanf("%d", &decisionCount);
       decreaseCount (&Occupancy, decisionCount);
         printf("New Occupancy: %d/%d\n\n", Occupancy, maxCount);
-        logChange(Occupancy);
+        logChange(Occupancy, maxCount);
         ledCheck(Occupancy);
      // return; //left blank intentionally
       } 
@@ -77,6 +76,7 @@ void mainMenu(int *repeat){
         scanf("%d", &maxCount);
         printf("\nNew max count is %d.\n", maxCount);
         ledCheck(Occupancy);
+        logChange(Occupancy, maxCount);
         printf("New Occupancy: %d/%d\n\n", Occupancy, maxCount);
     }
     else if(decision == 4){
