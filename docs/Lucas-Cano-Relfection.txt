@@ -1,1 +1,4 @@
-
+1 - I wrote logChange, ledCheck, and the main portions of the code. I also helped adjusting Jonah's main menu function and fixing formatting and other issues
+2 - 
+3 - 
+4 - 
