@@ -19,7 +19,7 @@ void increaseCount(int *p, int change);
 void decreaseCount(int *p, int change);
  
 void logChange(int Occupancy, int maxCount){
-    FILE *file = fopen("change_log.txt", "w");  
+    FILE *file = fopen("change_log.txt", "a");  
     if (file == NULL) {  
         printf("\n\nError opening file\n\n");  
         return;
