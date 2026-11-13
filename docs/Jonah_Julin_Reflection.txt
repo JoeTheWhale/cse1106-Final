@@ -1,0 +1,5 @@
+1. My primary project contribution is I wrote a lot of the base code we used and did a lot of problem-solving
+2. The most challenging technical problem we encountered was printing every change into a separate document
+3. By using testing, we were able to pinpoint the source of all our problems
+4. The skill I find most useful that I learned is the ability to use commands in a terminal for file manipulation and compilation
+5. Definitely add more features, maybe add a motion sensor to automate the counting process
