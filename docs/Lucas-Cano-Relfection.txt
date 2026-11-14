@@ -1,4 +1,5 @@
-1 - I wrote logChange, ledCheck, and the main portions of the code. I also helped adjusting Jonah's main menu function and fixing formatting and other issues
-2 - 
-3 - 
-4 - 
+1 - I wrote logChange, ledCheck, and the main portions of the code. I also helped adjusting Jonah's main menu function and fixing formatting and other issues.
+2 - The most challenging aspect of this project was figuring out how to print each change to a new document. 
+3 - We used debugging and testing to see if the light would turn on when the max capacity was reached. We had to make an adjustmnent after the light stayed on when we increased the max capacity of the room.
+4 - Our knowledge of how to use the breadboard and the raspberry pi was crucial in this lab. It allowed me to figure out how the light works and apply it to our scenerio.
+5 - If I had more time to dedicate to this project, I would make it to where if the capacity was 5/5 and you add one more student. It would display the overflow and a warning of MAX CAPACITY message.
